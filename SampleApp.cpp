@@ -46,10 +46,11 @@ public:
     //     and the second is the explanation of the parameter.
     // "add_val" takes two arguments: the first is the pointer to the variable,
     //     and the second is the explanation of the value.
+    // "add_val" should  be called immediately after corresponding "add_arg".
     // In this sample, user need to specify the four arguments in the order of 
     // the indices.
     add_arg(1, "String Argument (First Argument)");
-    add_val(&fixed_str_arg, "String (len < 32)");
+    add_val(&fixed_str_arg, "String");
     
     add_arg(2, "Integer Argument (Second Argument)");
     add_val(&fixed_int_arg, "Int");
@@ -66,7 +67,7 @@ public:
     // and don't need to care the order of the option in the command line.
     // Notice that the first argument of the add_arg is the option string.
     add_arg("-str", "String Argument 2 (Optional Argument)");
-    add_val(&free_str_arg, "String (len < 32)");
+    add_val(&free_str_arg, "String");
 
     add_arg("-int", "Integer Argument 2 (Optional Argument)");
     add_val(&free_int_arg, "Int");
