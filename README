@@ -1,0 +1,14 @@
+This library probides easy way to bulid command line application. 
+Two files are the library.
+
+CmpAppBase.h
+CmpAppBase.cpp
+
+You need to include CmdAppBase.h to your program and define a main class inheriting the CmdAppBase. In the constructor of the main class you can define command line arguments easily by using "add_arg" and "add_value" method.
+
+To know the actual usage of the CmdAppBase, please see the SampleApp.cpp
+
+Yohei Matsumoto
+Tokyo University of Marine Science and Technology
+
+
